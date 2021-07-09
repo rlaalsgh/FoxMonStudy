@@ -1,5 +1,8 @@
 // rootReducer.js 
 import { combineReducers } from 'redux';
- const rootReducer = combineReducers({ }); 
+import { articleReducer} from './slices/articleSlice';
+import { boardReducer} from './slices/boardSlice';
+
+ const rootReducer = combineReducers({ articleReducer, boardReducer }); 
  
  export default rootReducer;
