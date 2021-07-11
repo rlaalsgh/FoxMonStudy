@@ -9,7 +9,7 @@ function Register() {
   const [signUpCheck, setSignUpCheck] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [passwordconfirm, setPasswordConfirm] = useState(false);
+  const [passwordconfirm, setPasswordConfirm] = useState('');
   const [name, setName] = useState('');
 
   const [passwordError, setPasswordError] = useState(false);
@@ -30,7 +30,7 @@ function Register() {
     //   name,
     // });
 
-    userPost();
+    // userPost();
   };
 
 
@@ -88,9 +88,9 @@ function Register() {
       </div>
       <div className="register_contents">
         <form className="signup_form" onSubmit={onSubmitHandler}>
-          <div className = "signup_label">Email
-          <input type="email" className="signup_label_input"  value={email} 
-          onChange={onChangeEmail} placeholder ="E-mail"></input></div>
+          <div className = "signup_label">E-Mail
+          <input type="email" className="signup_label_input" value={email} 
+          onChange={onChangeEmail} placeholder ="E-Mail"></input></div>
 
           <div className="signup_label">Password
           <input type="password" className="signup_label_input"

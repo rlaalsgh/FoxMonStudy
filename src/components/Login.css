@@ -1,12 +1,92 @@
-
-.login_main_holder{
+.login_main {
+    height : 90vh;
+}
+  
+.login_body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    text-align: center;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-
+    /* background-color: #3a3a3a; */
 }
 
-.signin_form_field{
+input[type="password"],
+input[type="email"] {
+    background: white;
+    border: none;
+    font-size: 0.8em;
+    height: auto;
+    margin-top: 3px;
+    padding: 15px;
+    width: 100%;
+    background-color: #f5f5dc;
+    color: #8a97a0;
+    margin-bottom: 3em;
+    border-radius : 15px;
+}
+  
+.login_main_holder {
+    width: 50%;
+    height: 70%;
     display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 2px gray;
 }
+
+.signin_label {
+    color : black;
+    font-weight: bold;
+    margin-bottom : 1em;
+}
+
+.signin_form {
+    align-self: flex-start;
+    display: grid;
+    /* justify-items: center; */
+    align-items: center;
+}
+  
+.signin_form_field::placeholder {
+    color: #3a3a3a; 
+    font-weight: bold;
+}
+  
+.signin_form_field {
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+}
+
+.signin_submit_button {
+    padding: 19px 39px 19px 39px;
+    color: #FFF;
+    background-color: #ff7f00;
+    font-size: 1.2em;
+    text-align: center;
+    font-style: normal;
+    border-radius: 15px;
+    width: 83%;
+    border: 1px solid #ff7f00;
+    border-width: 1px 1px 1px;
+    margin-bottom: 10px;
+    margin-left : 20px;
+}
+
+.signin_submit_button:hover {
+    background-color : #fff;
+    color : #ff7f00;
+    transition : 1s;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+}
+  

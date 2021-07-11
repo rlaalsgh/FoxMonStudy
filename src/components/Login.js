@@ -32,7 +32,7 @@ function Login({click}) {
                 console.log(err);
             }
         }
-        postUser();
+        // postUser();
     });
 
     const onSubmitHandler = (e) => {
@@ -71,14 +71,17 @@ function Login({click}) {
             <div className = "login_body">
                 <div className = "login_main_holder">
                     <div className = "login_title">
-                    <h1 >Login</h1>
+                        <h1 >Login</h1>
                     </div>
-                    <form className = "signin_form" onSubmit = {onSubmitHandler}>
-                        <input type = "text"   value = {email} onChange = {onChangeEmail}
-                            className = "signin_form_field" placeholder="Email"></input>
 
+                    <form className = "signin_form" onSubmit = {onSubmitHandler}>
+                        <div className = "signin_label">E-Mail
+                        <input type = "text" value = {email} onChange = {onChangeEmail}
+                            className = "signin_form_field" placeholder="E-Mail"></input></div>
+
+                        <div className = "signin_label">Password
                         <input type = "password"  value = {password} onChange = {onChangePassword}
-                            className = "signin_form_field" placeholder="Password"></input>
+                            className = "signin_form_field" placeholder="Password"></input></div>
 
                         <button className = "signin_submit_button" type = "submit">Sign In</button>
                         {redirectFlag && (<Redirect to = "/"></Redirect>)}
